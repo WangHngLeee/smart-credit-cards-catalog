@@ -1,0 +1,1153 @@
+{
+  "version": 3,
+  "minAppVersion": "0.1.0",
+  "updatedAt": "2026-07-07",
+  "templates": [
+    {
+      "id": "amex-gold",
+      "name": "American Express Gold Card",
+      "issuer": "American Express",
+      "annualFee": 325,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/gold-card/",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Template values are starter defaults. Verify current Amex terms and enrollment requirements.",
+      "benefits": [
+        {
+          "id": "amex-gold-dining",
+          "name": "Dining Credit",
+          "category": "Dining",
+          "resetFrequency": "Monthly",
+          "valueType": "Money",
+          "totalValue": 10,
+          "rulesText": "Monthly dining statement credit. Enrollment/eligible merchants may apply.",
+          "sourceURL": "https://global.americanexpress.com/card-benefits/detail/dining-credit/gold",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-gold-uber",
+          "name": "Uber Cash",
+          "category": "Rideshare",
+          "resetFrequency": "Monthly",
+          "valueType": "Money",
+          "totalValue": 10,
+          "rulesText": "Monthly Uber Cash benefit. Add card to Uber account; US terms may apply.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-gold-resy",
+          "name": "Resy Dining Credit",
+          "category": "Dining",
+          "resetFrequency": "Semiannual",
+          "valueType": "Money",
+          "totalValue": 50,
+          "rulesText": "Semiannual Resy-related dining credit. Verify eligible merchants and enrollment.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Dining",
+          "multiplier": 4,
+          "estimatedPointValue": 1.6,
+          "reason": "Strong dining earning plus dining-related credits.",
+          "hasProtection": false
+        },
+        {
+          "category": "Grocery",
+          "multiplier": 4,
+          "estimatedPointValue": 1.6,
+          "reason": "Strong US supermarket earning; verify annual cap.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "amex-platinum",
+      "name": "The Platinum Card from American Express",
+      "issuer": "American Express",
+      "annualFee": 895,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Premium benefits change often. Verify current annual fee, enrollment, and credit cadence.",
+      "benefits": [
+        {
+          "id": "amex-plat-airline",
+          "name": "Airline Fee Credit",
+          "category": "Flights",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 200,
+          "rulesText": "Annual airline incidental fee credit. Airline selection/enrollment restrictions may apply.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-plat-hotel",
+          "name": "Fine Hotels + Resorts / Hotel Credit",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 600,
+          "rulesText": "Hotel credit amount/cadence may vary by current Platinum terms. Verify before relying.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-plat-uber",
+          "name": "Uber Cash",
+          "category": "Rideshare",
+          "resetFrequency": "Monthly",
+          "valueType": "Money",
+          "totalValue": 15,
+          "rulesText": "Monthly Uber Cash; December bonus may apply. Verify current terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-plat-digital",
+          "name": "Digital Entertainment Credit",
+          "category": "Online",
+          "resetFrequency": "Monthly",
+          "valueType": "Money",
+          "totalValue": 25,
+          "rulesText": "Digital entertainment credit. Eligible services and monthly amount change over time.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-plat-saks",
+          "name": "Saks Credit",
+          "category": "Shopping",
+          "resetFrequency": "Semiannual",
+          "valueType": "Money",
+          "totalValue": 50,
+          "rulesText": "Semiannual Saks credit. Enrollment may apply.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "amex-plat-resy",
+          "name": "Resy Dining Credit",
+          "category": "Dining",
+          "resetFrequency": "Quarterly",
+          "valueType": "Money",
+          "totalValue": 100,
+          "rulesText": "Quarterly Resy credit. Verify current eligible restaurants and terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Flights",
+          "multiplier": 5,
+          "estimatedPointValue": 1.6,
+          "reason": "Strong flight earning and premium travel protections.",
+          "hasProtection": true
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 5,
+          "estimatedPointValue": 1.6,
+          "reason": "Best when booking eligible prepaid hotels through Amex Travel/FHR.",
+          "hasProtection": true
+        },
+        {
+          "category": "International",
+          "multiplier": 1,
+          "estimatedPointValue": 1.6,
+          "reason": "No foreign transaction fee and lounge/travel benefits.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "amex-hilton-honors",
+      "name": "Hilton Honors American Express Card",
+      "issuer": "American Express",
+      "annualFee": 0,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors/",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "No-annual-fee Hilton starter card template. Verify earning and status terms.",
+      "benefits": [
+        {
+          "id": "hilton-base-status",
+          "name": "Hilton Honors Silver Status",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Complimentary Hilton Honors status benefit. Verify current status level and terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Hotels",
+          "multiplier": 7,
+          "estimatedPointValue": 0.5,
+          "reason": "Hilton purchases earn elevated Hilton points.",
+          "hasProtection": false
+        },
+        {
+          "category": "Dining",
+          "multiplier": 5,
+          "estimatedPointValue": 0.5,
+          "reason": "Often earns elevated Hilton points at US restaurants; verify terms.",
+          "hasProtection": false
+        },
+        {
+          "category": "Grocery",
+          "multiplier": 5,
+          "estimatedPointValue": 0.5,
+          "reason": "Often earns elevated Hilton points at US supermarkets; verify terms.",
+          "hasProtection": false
+        },
+        {
+          "category": "Gas",
+          "multiplier": 5,
+          "estimatedPointValue": 0.5,
+          "reason": "Often earns elevated Hilton points at US gas stations; verify terms.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "amex-hilton-aspire",
+      "name": "Hilton Honors American Express Aspire Card",
+      "issuer": "American Express",
+      "annualFee": 550,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "High-value Hilton benefits change periodically; verify resort/flight/property credit terms.",
+      "benefits": [
+        {
+          "id": "aspire-resort",
+          "name": "Hilton Resort Credit",
+          "category": "Hotels",
+          "resetFrequency": "Semiannual",
+          "valueType": "Money",
+          "totalValue": 200,
+          "rulesText": "Semiannual Hilton resort/property credit. Verify eligible properties and cadence.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "aspire-flight",
+          "name": "Flight Credit",
+          "category": "Flights",
+          "resetFrequency": "Quarterly",
+          "valueType": "Money",
+          "totalValue": 50,
+          "rulesText": "Quarterly flight credit. Verify current terms and eligible purchases.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "aspire-diamond",
+          "name": "Hilton Diamond Status",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Complimentary Hilton Honors Diamond status. Verify current status terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "aspire-free-night",
+          "name": "Free Night Reward",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Count",
+          "totalValue": 1,
+          "rulesText": "Annual free night reward. Timing and eligibility may vary.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Hotels",
+          "multiplier": 14,
+          "estimatedPointValue": 0.5,
+          "reason": "Very strong Hilton earning plus Hilton benefits.",
+          "hasProtection": true
+        },
+        {
+          "category": "Flights",
+          "multiplier": 7,
+          "estimatedPointValue": 0.5,
+          "reason": "Elevated travel earning and flight credits; verify terms.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "chase-sapphire-preferred",
+      "name": "Chase Sapphire Preferred",
+      "issuer": "Chase",
+      "annualFee": 95,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Travel rewards template. Verify Chase Travel and partner benefit terms.",
+      "benefits": [
+        {
+          "id": "csp-hotel",
+          "name": "Hotel Credit via Chase Travel",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 50,
+          "rulesText": "Annual hotel credit for eligible Chase Travel hotel bookings.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "csp-doordash",
+          "name": "DoorDash Credit/Benefit",
+          "category": "Dining",
+          "resetFrequency": "Monthly",
+          "valueType": "Money",
+          "totalValue": 10,
+          "rulesText": "DoorDash benefits can change. Verify current Chase partner terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.8,
+          "reason": "Strong dining earning with transferable points.",
+          "hasProtection": true
+        },
+        {
+          "category": "Flights",
+          "multiplier": 2,
+          "estimatedPointValue": 1.8,
+          "reason": "Good travel earning and protections.",
+          "hasProtection": true
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 5,
+          "estimatedPointValue": 1.8,
+          "reason": "Strong when booked through Chase Travel; verify rate.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "chase-freedom-flex",
+      "name": "Chase Freedom Flex",
+      "issuer": "Chase",
+      "annualFee": 0,
+      "foreignTransactionFee": "Applies",
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Rotating category template. Quarterly categories require manual activation/review.",
+      "benefits": [
+        {
+          "id": "cff-rotating",
+          "name": "5% Rotating Categories",
+          "category": "Rotating",
+          "resetFrequency": "Quarterly",
+          "valueType": "Money",
+          "totalValue": 75,
+          "rulesText": "Quarterly 5% categories often capped at $1,500 spend after activation. Update categories manually each quarter.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "No-fee dining cashback/points earning.",
+          "hasProtection": false
+        },
+        {
+          "category": "Drugstores",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Strong no-fee drugstore earning.",
+          "hasProtection": false
+        },
+        {
+          "category": "Rotating",
+          "multiplier": 5,
+          "estimatedPointValue": 1.0,
+          "reason": "Best when current quarterly category applies and activated.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "chase-freedom-unlimited",
+      "name": "Chase Freedom Unlimited",
+      "issuer": "Chase",
+      "annualFee": 0,
+      "foreignTransactionFee": "Applies",
+      "sourceURL": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Simple catch-all Chase card template.",
+      "benefits": [],
+      "recommendationRules": [
+        {
+          "category": "General",
+          "multiplier": 1.5,
+          "estimatedPointValue": 1.0,
+          "reason": "Strong no-fee catch-all earning.",
+          "hasProtection": false
+        },
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "No-fee dining earning.",
+          "hasProtection": false
+        },
+        {
+          "category": "Drugstores",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Strong no-fee drugstore earning.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "chase-world-of-hyatt",
+      "name": "World of Hyatt Credit Card",
+      "issuer": "Chase",
+      "annualFee": 95,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Hyatt hotel card template. Verify free night and elite night terms.",
+      "benefits": [
+        {
+          "id": "hyatt-free-night",
+          "name": "Category 1-4 Free Night",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Count",
+          "totalValue": 1,
+          "rulesText": "Annual free night certificate after cardmember anniversary. Verify category and timing terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "hyatt-discoverist",
+          "name": "Hyatt Discoverist Status",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Complimentary Hyatt Discoverist status. Verify current terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Hotels",
+          "multiplier": 4,
+          "estimatedPointValue": 1.7,
+          "reason": "Strong Hyatt earning on Hyatt purchases.",
+          "hasProtection": true
+        },
+        {
+          "category": "Dining",
+          "multiplier": 2,
+          "estimatedPointValue": 1.7,
+          "reason": "Useful category earning with Hyatt points.",
+          "hasProtection": false
+        },
+        {
+          "category": "Flights",
+          "multiplier": 2,
+          "estimatedPointValue": 1.7,
+          "reason": "Useful travel earning; verify terms.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "boa-atmos-ascent",
+      "name": "Atmos Rewards Ascent Visa Signature Card",
+      "issuer": "Bank of America",
+      "annualFee": 95,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "BofA/Alaska Atmos branding is new and should be verified against current issuer terms.",
+      "benefits": [
+        {
+          "id": "atmos-ascent-companion",
+          "name": "Companion Fare",
+          "category": "Flights",
+          "resetFrequency": "Annual",
+          "valueType": "Count",
+          "totalValue": 1,
+          "rulesText": "Annual companion fare-style benefit may require spend/taxes/fees. Verify current Atmos terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "atmos-ascent-bag",
+          "name": "Checked Bag Benefit",
+          "category": "Flights",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Checked bag benefits vary by itinerary and companions. Verify current terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Flights",
+          "multiplier": 3,
+          "estimatedPointValue": 1.4,
+          "reason": "Best for eligible Alaska/Atmos purchases; verify earning rate.",
+          "hasProtection": true
+        },
+        {
+          "category": "Dining",
+          "multiplier": 2,
+          "estimatedPointValue": 1.4,
+          "reason": "Potential elevated earning category; verify current terms.",
+          "hasProtection": false
+        },
+        {
+          "category": "Gas",
+          "multiplier": 2,
+          "estimatedPointValue": 1.4,
+          "reason": "Potential elevated earning category; verify current terms.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "boa-atmos-summit",
+      "name": "Atmos Rewards Summit Visa Infinite Card",
+      "issuer": "Bank of America",
+      "annualFee": 395,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.bankofamerica.com/credit-cards/products/alaska-airlines-credit-card/",
+      "lastReviewedAt": "2026-07-02",
+      "needsReview": false,
+      "notes": "Premium Atmos/Alaska card template. Verify current launch terms, credits, and certificates.",
+      "benefits": [
+        {
+          "id": "atmos-summit-companion",
+          "name": "Companion Award / Fare Benefit",
+          "category": "Flights",
+          "resetFrequency": "Annual",
+          "valueType": "Count",
+          "totalValue": 1,
+          "rulesText": "Premium companion/travel benefit. Verify exact current terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "atmos-summit-travel",
+          "name": "Travel Credit",
+          "category": "Travel",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 100,
+          "rulesText": "Placeholder travel credit amount. Verify current Summit card terms before using.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "atmos-summit-lounge",
+          "name": "Lounge / Premium Travel Benefit",
+          "category": "Travel",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Premium travel benefits may apply. Verify current issuer terms.",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Flights",
+          "multiplier": 3,
+          "estimatedPointValue": 1.4,
+          "reason": "Best for eligible Alaska/Atmos purchases; verify earning rate.",
+          "hasProtection": true
+        },
+        {
+          "category": "International",
+          "multiplier": 1,
+          "estimatedPointValue": 1.4,
+          "reason": "No foreign transaction fee and Visa Infinite-style travel positioning; verify benefits.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "citi-strata-elite",
+      "name": "Citi Strata Elite Card",
+      "issuer": "Citi",
+      "annualFee": 595,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Premium Citi travel card. Verify enrollment, merchant exclusions, and annual fee before relying on credits.",
+      "benefits": [
+        {
+          "id": "citi-strata-elite-hotel",
+          "name": "Annual Hotel Benefit",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 300,
+          "rulesText": "Up to $300 off eligible 2-night-or-longer hotel stays booked through Citi Travel.",
+          "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "citi-strata-elite-splurge",
+          "name": "Annual Splurge Credit",
+          "category": "Shopping",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 200,
+          "rulesText": "Up to $200 annual statement credits across selected brands such as American Airlines, Best Buy, Live Nation, and others. Choose brands in Citi terms.",
+          "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "citi-strata-elite-blacklane",
+          "name": "Blacklane Credit",
+          "category": "Rideshare",
+          "resetFrequency": "Semiannual",
+          "valueType": "Money",
+          "totalValue": 100,
+          "rulesText": "Up to $100 January-June and up to $100 July-December for eligible Blacklane purchases.",
+          "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "citi-strata-elite-admirals-club",
+          "name": "Admirals Club Passes",
+          "category": "Flights",
+          "resetFrequency": "Annual",
+          "valueType": "Count",
+          "totalValue": 4,
+          "rulesText": "Four annual Admirals Club passes. Verify eligible lounges and access restrictions.",
+          "sourceURL": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Hotels",
+          "multiplier": 12,
+          "estimatedPointValue": 1.5,
+          "reason": "Very strong Citi Travel hotel/car/attraction earning plus annual hotel credit.",
+          "hasProtection": true
+        },
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.5,
+          "reason": "Good restaurant earning; Citi Nights purchases can earn higher on eligible times.",
+          "hasProtection": false
+        },
+        {
+          "category": "General",
+          "multiplier": 1.5,
+          "estimatedPointValue": 1.5,
+          "reason": "Above-baseline everyday earning for a transferable-points card.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "citi-strata-premier",
+      "name": "Citi Strata Premier Card",
+      "issuer": "Citi",
+      "annualFee": 95,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Mid-tier Citi travel card. Verify Citi Travel and transfer partner terms.",
+      "benefits": [
+        {
+          "id": "citi-strata-premier-hotel",
+          "name": "Annual Hotel Benefit",
+          "category": "Hotels",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 100,
+          "rulesText": "Once per calendar year, $100 off a single eligible hotel stay of $500 or more booked through Citi Travel.",
+          "sourceURL": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Hotels",
+          "multiplier": 10,
+          "estimatedPointValue": 1.5,
+          "reason": "Strong Citi Travel hotel/car/attraction earning and a useful annual hotel credit.",
+          "hasProtection": true
+        },
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.5,
+          "reason": "Solid restaurant earning with transferable ThankYou points.",
+          "hasProtection": false
+        },
+        {
+          "category": "Grocery",
+          "multiplier": 3,
+          "estimatedPointValue": 1.5,
+          "reason": "Useful supermarket earning for everyday spend.",
+          "hasProtection": false
+        },
+        {
+          "category": "Gas",
+          "multiplier": 3,
+          "estimatedPointValue": 1.5,
+          "reason": "Good gas and EV charging earning.",
+          "hasProtection": false
+        },
+        {
+          "category": "Flights",
+          "multiplier": 3,
+          "estimatedPointValue": 1.5,
+          "reason": "Good air travel earning plus no foreign transaction fee.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "citi-double-cash",
+      "name": "Citi Double Cash Card",
+      "issuer": "Citi",
+      "annualFee": 0,
+      "foreignTransactionFee": "Applies",
+      "sourceURL": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Simple no-annual-fee catch-all card. Verify current travel portal bonus terms.",
+      "benefits": [],
+      "recommendationRules": [
+        {
+          "category": "General",
+          "multiplier": 2,
+          "estimatedPointValue": 1.0,
+          "reason": "Simple 2% style earning: 1% when buying and 1% as you pay.",
+          "hasProtection": false
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 5,
+          "estimatedPointValue": 1.0,
+          "reason": "Elevated earning on eligible hotels, car rentals, and attractions booked through Citi Travel.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "discover-it-cash-back",
+      "name": "Discover it Cash Back",
+      "issuer": "Discover",
+      "annualFee": 0,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Quarterly rotating categories require activation and category updates.",
+      "benefits": [
+        {
+          "id": "discover-it-quarterly",
+          "name": "5% Quarterly Categories",
+          "category": "Rotating",
+          "resetFrequency": "Quarterly",
+          "valueType": "Money",
+          "totalValue": 75,
+          "rulesText": "Earn 5% cash back at different places each quarter up to the quarterly maximum after activation.",
+          "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "discover-it-cashback-match",
+          "name": "First-Year Cashback Match",
+          "category": "General",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Discover automatically matches all cash back earned at the end of the first year for new cardmembers.",
+          "sourceURL": "https://www.discover.com/credit-cards/cash-back/it-card/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Rotating",
+          "multiplier": 5,
+          "estimatedPointValue": 1.0,
+          "reason": "Excellent when the active quarterly category matches your purchase.",
+          "hasProtection": false
+        },
+        {
+          "category": "General",
+          "multiplier": 1,
+          "estimatedPointValue": 1.0,
+          "reason": "Baseline cash back when no rotating category applies.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "discover-it-miles",
+      "name": "Discover it Miles",
+      "issuer": "Discover",
+      "annualFee": 0,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.discover.com/credit-cards/travel/",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Simple no-annual-fee miles card. First-year match applies to new cardmembers.",
+      "benefits": [
+        {
+          "id": "discover-miles-match",
+          "name": "First-Year Miles Match",
+          "category": "General",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Discover automatically matches all Miles earned at the end of the first year for new cardmembers.",
+          "sourceURL": "https://www.discover.com/credit-cards/travel/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "General",
+          "multiplier": 1.5,
+          "estimatedPointValue": 1.0,
+          "reason": "Simple 1.5x Miles on travel and everyday purchases.",
+          "hasProtection": false
+        },
+        {
+          "category": "Travel",
+          "multiplier": 1.5,
+          "estimatedPointValue": 1.0,
+          "reason": "Miles can be redeemed for travel statement credits or cash.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "capital-one-venture-x",
+      "name": "Capital One Venture X Rewards",
+      "issuer": "Capital One",
+      "annualFee": 395,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Premium travel card. Verify lounge guest policies and Capital One Travel credit terms.",
+      "benefits": [
+        {
+          "id": "venture-x-travel-credit",
+          "name": "Capital One Travel Credit",
+          "category": "Travel",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 300,
+          "rulesText": "Annual travel credit for eligible bookings through Capital One Travel.",
+          "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "venture-x-lounge",
+          "name": "Lounge Access",
+          "category": "Flights",
+          "resetFrequency": "Annual",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Access Capital One Lounges and eligible Priority Pass lounges; enrollment and access rules apply.",
+          "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        },
+        {
+          "id": "venture-x-prior",
+          "name": "PRIOR Subscription",
+          "category": "Travel",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 149,
+          "rulesText": "Complimentary PRIOR subscription after required enrollment steps.",
+          "sourceURL": "https://www.capitalone.com/credit-cards/venture-x/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "General",
+          "multiplier": 2,
+          "estimatedPointValue": 1.5,
+          "reason": "Strong 2x catch-all earning for transferable miles.",
+          "hasProtection": true
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 10,
+          "estimatedPointValue": 1.5,
+          "reason": "Excellent earning on hotels and rental cars booked through Capital One Travel.",
+          "hasProtection": true
+        },
+        {
+          "category": "Flights",
+          "multiplier": 5,
+          "estimatedPointValue": 1.5,
+          "reason": "Strong flight earning through Capital One Travel plus lounge benefits.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "capital-one-savor",
+      "name": "Capital One Savor Rewards",
+      "issuer": "Capital One",
+      "annualFee": 0,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.capitalone.com/credit-cards/savor/",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "No-annual-fee food/fun card. Merchant category coding matters for bonus categories.",
+      "benefits": [],
+      "recommendationRules": [
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Strong no-fee cash back on restaurants, cafes, bars, fast food, and bakeries.",
+          "hasProtection": false
+        },
+        {
+          "category": "Grocery",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Good grocery earning, excluding superstores like Walmart and Target.",
+          "hasProtection": false
+        },
+        {
+          "category": "Entertainment",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Useful cash back on entertainment and popular streaming services.",
+          "hasProtection": false
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 5,
+          "estimatedPointValue": 1.0,
+          "reason": "Elevated earning on hotels, vacation rentals, and rental cars through Capital One Travel.",
+          "hasProtection": false
+        }
+      ]
+    },
+    {
+      "id": "wells-fargo-autograph",
+      "name": "Wells Fargo Autograph Card",
+      "issuer": "Wells Fargo",
+      "annualFee": 0,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Broad no-annual-fee travel/everyday category card. Verify transfer partner and protection terms.",
+      "benefits": [
+        {
+          "id": "wf-autograph-cell-phone",
+          "name": "Cell Phone Protection",
+          "category": "Online",
+          "resetFrequency": "Annual",
+          "valueType": "Money",
+          "totalValue": 600,
+          "rulesText": "Up to $600 cell phone protection against covered damage or theft, subject to deductible and terms.",
+          "sourceURL": "https://creditcards.wellsfargo.com/autograph-visa-credit-card/",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Dining",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "No-fee 3x dining across restaurants, take-out, catering, delivery, and more.",
+          "hasProtection": false
+        },
+        {
+          "category": "Flights",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Broad 3x travel earning with no foreign transaction fee.",
+          "hasProtection": true
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "Broad 3x travel earning on hotels and car rentals.",
+          "hasProtection": true
+        },
+        {
+          "category": "Gas",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "3x on gas stations and EV charging.",
+          "hasProtection": false
+        },
+        {
+          "category": "Transit",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "3x on transit, rideshares, parking, tolls, and similar purchases.",
+          "hasProtection": false
+        },
+        {
+          "category": "Online",
+          "multiplier": 3,
+          "estimatedPointValue": 1.0,
+          "reason": "3x on phone plans and popular streaming services.",
+          "hasProtection": true
+        }
+      ]
+    },
+    {
+      "id": "bilt-blue",
+      "name": "Bilt Blue Card",
+      "issuer": "Bilt",
+      "annualFee": 0,
+      "foreignTransactionFee": "None",
+      "sourceURL": "https://www.bilt.com/card",
+      "lastReviewedAt": "2026-07-05",
+      "needsReview": false,
+      "notes": "Bilt's card lineup changed in 2026. This template tracks Bilt Blue, not the legacy Wells Fargo Bilt Mastercard.",
+      "benefits": [
+        {
+          "id": "bilt-blue-housing",
+          "name": "Housing Payments Without Transaction Fee",
+          "category": "Rent",
+          "resetFrequency": "Monthly",
+          "valueType": "Boolean",
+          "totalValue": 1,
+          "rulesText": "Earn rewards on eligible rent, mortgage, and HOA payments through Bilt with no transaction fee. Setup and eligibility rules apply.",
+          "sourceURL": "https://www.bilt.com/card",
+          "needsReview": false,
+          "showOnDashboard": true,
+          "isActive": true
+        }
+      ],
+      "recommendationRules": [
+        {
+          "category": "Rent",
+          "multiplier": 1,
+          "estimatedPointValue": 1.5,
+          "reason": "Useful for housing payments where Bilt avoids transaction fees.",
+          "hasProtection": false
+        },
+        {
+          "category": "Dining",
+          "multiplier": 4,
+          "estimatedPointValue": 1.5,
+          "reason": "Strong earning at Bilt dining partners.",
+          "hasProtection": false
+        },
+        {
+          "category": "Hotels",
+          "multiplier": 3,
+          "estimatedPointValue": 1.5,
+          "reason": "Useful for hotels booked through Bilt Travel.",
+          "hasProtection": false
+        }
+      ]
+    }
+  ]
+}
